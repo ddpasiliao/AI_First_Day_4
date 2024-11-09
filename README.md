@@ -1,1 +1,16 @@
-# AI_First_Day_4
+Column Name	Description	Data Type	Example Value
+Training_ID	Unique identifier for each training session	Integer	2001
+Participant_Name	Name of the participant attending the training	String	"Alice Brown"
+Trainer_Name	Name of the trainer conducting the training	String	"John Doe"
+Training_Topic	Subject or topic of the training session	String	"Leadership Skills"
+Start_Date	Date when the training session begins	Date	"2024-01-05"
+End_Date	Date when the training session ends	Date	"2024-01-10"
+Status	Current status of the training session	String	"Completed"
+Duration_Hours	Total duration of the training session in hours	Integer	10
+Completion_Score	Percentage score achieved by the participant upon completion	Integer	85
+Feedback_Score	Rating provided by the participant on the training experience	Float	4.5
+Training_Method	Format of the training (e.g., Online, In-Person, Hybrid)	String	"Online"
+Trainer_Organization	Organization delivering the training session	String	"Leadership Academy"
+Training_Location	Location of the training session, virtual or physical address	String	"Virtual"
+Cost (USD)	Cost of the training session in USD	Float	300.00
+Certificate_Issued	Indicates if a certificate was issued upon completion	String	"Yes"
