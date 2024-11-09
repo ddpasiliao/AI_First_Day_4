@@ -1,4 +1,4 @@
-lumn Name,Description,Data Type,Example Value
+Column Name,Description,Data Type,Example Value
 Training_ID,Unique identifier for each training session,Integer,2001
 Participant_Name,Name of the participant attending the training,String,"""Alice Brown"""
 Trainer_Name,Name of the trainer conducting the training,String,"""John Doe"""
