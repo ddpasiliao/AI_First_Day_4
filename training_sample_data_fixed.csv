@@ -1,0 +1,21 @@
+Training_ID,Participant_Name,Trainer_Name,Training_Topic,Start_Date,End_Date,Status,Duration_Hours,Completion_Score,Feedback_Score,Training_Method,Trainer_Organization,Training_Location,Cost (USD),Certificate_Issued
+2001,Alice Brown,John Doe,Leadership Skills,01/11/2024,17/11/2024,Completed,30,80,3.5,In-Person,Leadership Academy,Virtual,246.81,Yes
+2002,Bob White,Jane Smith,Data Analytics,27/10/2024,19/11/2024,Scheduled,10,90,,In-Person,Data Insights Ltd,"New York, NY",735.25,No
+2003,Charlie Black,Sarah Lee,Project Management,26/10/2024,10/11/2024,Scheduled,20,80,4.8,Online,PM Institute,"Chicago, IL",642.31,No
+2004,Diane Green,Tom Harris,Software Development,07/11/2024,19/11/2024,In Progress,30,80,3.5,In-Person,Code Experts Inc,"San Francisco, CA",698.36,Yes
+2005,Evan Davis,Ella Clark,Machine Learning,06/11/2024,19/11/2024,Scheduled,10,80,4,Online,Marketing Masters,Virtual,499.38,No
+2006,Frank Scott,Bruce Wayne,Digital Marketing,27/10/2024,14/11/2024,In Progress,10,85,4,In-Person,Finance Wizards,"Austin, TX",647.47,Yes
+2007,Grace Lee,Sophia Young,Time Management,31/10/2024,12/11/2024,Scheduled,15,95,4,Online,PeopleSoft Ltd,Virtual,262.72,Yes
+2008,Holly West,Liam Brown,Financial Planning,24/10/2024,19/11/2024,Completed,25,80,,Online,AI Lab,"Orlando, FL",239.29,No
+2009,Ian Silver,Emma Green,Public Speaking,25/10/2024,18/11/2024,Scheduled,15,80,4.5,In-Person,Analytics Hub,"Seattle, WA",420.09,No
+2010,Jane Moon,Olivia Wilson,Team Collaboration,05/11/2024,19/11/2024,In Progress,10,95,,In-Person,CyberSafe Co,"Los Angeles, CA",595,No
+2011,Kyle Brooks,Henry Stone,Emotional Intelligence,26/10/2024,11/11/2024,Completed,20,80,,Hybrid,Sales Solutions,"Boston, MA",431.18,Yes
+2012,Lily Rose,Nora White,Risk Management,06/11/2024,10/11/2024,Completed,25,90,4,Online,Service Academy,"Phoenix, AZ",739.88,No
+2013,Mason James,Ethan Hunt,Customer Service,04/11/2024,12/11/2024,Scheduled,30,75,4.8,In-Person,Training4You,"San Diego, CA",454.28,No
+2014,Nina Fox,Grace Chen,Data Privacy,05/11/2024,12/11/2024,Completed,30,90,4.5,Online,TechUp,"Dallas, TX",476.72,No
+2015,Oliver Chase,Sophia Scott,Cybersecurity Basics,26/10/2024,17/11/2024,Completed,20,75,5,Online,Leadership Academy,"Atlanta, GA",500.7,No
+2016,Parker Bell,Lucas Hill,Sales Techniques,29/10/2024,18/11/2024,Scheduled,15,95,5,Online,Data Insights Ltd,"Denver, CO",401.9,Yes
+2017,Quinn Hope,Zoe Kim,Conflict Resolution,28/10/2024,12/11/2024,In Progress,15,,3.5,Hybrid,PM Institute,"Philadelphia, PA",545.24,Yes
+2018,Riley Gray,Chris Turner,Diversity and Inclusion,02/11/2024,12/11/2024,Completed,15,,4.5,Hybrid,Code Experts Inc,"Charlotte, NC",722.39,No
+2019,Samantha Wood,Aaron Black,Agile Frameworks,30/10/2024,17/11/2024,Completed,20,80,4.5,Hybrid,Marketing Masters,"Houston, TX",375.91,No
+2020,Taylor Ray,Diana Silver,Problem Solving,30/10/2024,16/11/2024,In Progress,20,95,3.5,In-Person,Finance Wizards,"Miami, FL",167.53,Yes
