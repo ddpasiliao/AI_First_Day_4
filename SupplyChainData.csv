@@ -1,0 +1,21 @@
+tem_ID,Item_Name,Quantity,Weight_kg,Dimensions_cm (L x W x H),Fragile,Stackable,Delivery_Location,Vehicle_Type,Vehicle_Capacity_kg,Vehicle_Dimensions_cm (L x W x H)
+1,Laptops,50,1.5,30 x 20 x 5,Yes,No,Manila,Truck,"5,000",400 x 200 x 200
+2,Office Chairs,20,15,80 x 80 x 100,No,Yes,Cebu,Truck,"5,000",400 x 200 x 200
+3,Desks,15,30,150 x 80 x 75,No,Yes,Davao,Container,"20,000",800 x 240 x 240
+4,Monitors,40,3,60 x 30 x 20,Yes,Yes,Manila,Van,"1,000",300 x 150 x 150
+5,Books,100,0.5,25 x 20 x 5,No,Yes,Cebu,Truck,"5,000",400 x 200 x 200
+6,Printers,25,10,50 x 50 x 30,Yes,No,Davao,Container,"20,000",800 x 240 x 240
+7,Filing Cabinets,10,40,60 x 60 x 120,No,No,Cebu,Truck,"5,000",400 x 200 x 200
+8,Air Conditioners,15,20,70 x 60 x 35,Yes,No,Manila,Van,"1,000",300 x 150 x 150
+9,Paper Rolls,200,1,10 x 10 x 20,No,Yes,Davao,Container,"20,000",800 x 240 x 240
+10,Desktop Computers,30,5,40 x 20 x 40,Yes,No,Manila,Truck,"5,000",400 x 200 x 200
+11,Smart TVs,10,8,100 x 20 x 60,Yes,No,Manila,Van,"1,000",300 x 150 x 150
+12,Refrigerators,5,75,70 x 80 x 180,Yes,No,Cebu,Truck,"5,000",400 x 200 x 200
+13,Medical Supplies,100,0.8,20 x 20 x 10,Yes,Yes,Davao,Container,"20,000",800 x 240 x 240
+14,Tires,50,10,60 x 60 x 20,No,Yes,Cebu,Truck,"5,000",400 x 200 x 200
+15,Solar Panels,25,15,150 x 100 x 10,Yes,No,Manila,Truck,"5,000",400 x 200 x 200
+16,Plastic Crates,200,2,30 x 30 x 30,No,Yes,Cebu,Van,"1,000",300 x 150 x 150
+17,Lighting Fixtures,50,0.5,40 x 20 x 20,Yes,No,Manila,Van,"1,000",300 x 150 x 150
+18,Cement Bags,100,50,50 x 40 x 10,No,Yes,Davao,Container,"20,000",800 x 240 x 240
+19,Paint Cans,60,2,20 x 20 x 30,Yes,Yes,Cebu,Truck,"5,000",400 x 200 x 200
+20,Carpets,30,8,200 x 20 x 20,No,Yes,Manila,Truck,"5,000",400 x 200 x 200
