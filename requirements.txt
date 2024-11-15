@@ -9,3 +9,6 @@ langchain
 langchain_community
 scipy
 scikit-learn
+pandas
+numpy
+json
