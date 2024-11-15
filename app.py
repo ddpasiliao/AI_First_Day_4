@@ -11,7 +11,6 @@ from langchain.vectorstores import Chroma
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnableLambda, RunnablePassthrough
 from openai.embeddings_utils import get_embedding
-from PIL import Image
 
 import streamlit as st
 import warnings
