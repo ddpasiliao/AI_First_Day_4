@@ -109,7 +109,8 @@ submit_button = st.button("Get Loading Advice")
 if submit_button and load_input:
     with st.spinner("Calculating optimal load..."):
         # Get the answer using MaxLoad's API or logic
-        response = get_load_advice(load_input)
+        response = get_maxload_answer(load_input)
         st.write(response)
+        
 st.markdown('</div>', unsafe_allow_html=True)
 
