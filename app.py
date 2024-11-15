@@ -18,20 +18,22 @@ import warnings
 from streamlit_option_menu import option_menu
 from streamlit_extras.mention import mention
 
-
 warnings.filterwarnings('ignore')
 
-st.set_page_config(page_title="MaxLoad: Load Optimization Assistant", page_icon="🏴‍☠️", layout="wide")
+st.set_page_config(page_title="One Piece Knowledge Tool", page_icon="🏴‍☠️", layout="wide")
 
 
 # Load the Jolly Roger image
 try:
-    maxload_path = "./MaxLoad_bg.jpg"
-    maxload_image = Image.open(maxload_path)
+    jolly_roger_path = "./One Piece Jolly Roger.png"
+    jolly_roger_image = Image.open(jolly_roger_path)
 except FileNotFoundError:
-    st.error("MaxLoad image not found. Please ensure the file 'MaxLoad_bg.jpg' is in the same directory as this script.")
+    st.error("Jolly Roger image not found. Please ensure the file 'One Piece Jolly Roger.png' is in the same directory as this script.")
 
 with st.sidebar:
+     # Display the larger Jolly Roger image at the top of the sidebar
+    if 'jolly_roger_image' in locals():
+        st.image(jolly_roger_image, width=300, caption="")  # Increased width for a larger image
     openai.api_key = st.text_input("OpenAI API Key", type="password")
     if not (openai.api_key.startswith('sk') and len(openai.api_key) == 164):
         st.warning("Please enter a valid OpenAI API key", icon="⚠️")
@@ -44,38 +46,48 @@ with st.sidebar:
         with m : st.empty()
         with r : st.empty()
 
+    options = option_menu(
+        "Dashboard", 
+        ["Home", "About One Piece", "Model"],
+        icons = ['book', 'globe', 'tools'],
+        menu_icon = "book", 
+        default_index = 0,
+        styles = {
+            "icon" : {"color" : "#dec960", "font-size" : "20px"},
+            "nav-link" : {"font-size" : "17px", "text-align" : "left", "margin" : "5px", "--hover-color" : "#262730"},
+            "nav-link-selected" : {"background-color" : "#262730"}          
+        })
+
 
 # System prompt for better accuracy
 system_prompt = """
-You are MaxLoad, an expert logistics loading assistant dedicated to maximizing load efficiency and ensuring safe, accurate loading procedures for transportation. Your primary goal is to provide precise, well-organized, and practical guidance for load planning and logistics optimization. Follow these guidelines to excel in assisting with loading tasks:
+You are an expert on the One Piece universe, focused on delivering precise and factual information solely based on the series. Your main objective is to provide clear and accurate answers to user inquiries about One Piece. To achieve this effectively, please adhere to the following detailed guidelines:
+Fact-Based Responses:
 
-Load-Based Responses:
-
-    Source Information: Base all recommendations on logistics best practices, load capacity guidelines, and safety regulations.
-    No Speculation: Avoid assumptions about load requirements. Focus on the provided parameters such as weight limits, dimensions, and transportation specifics.
+    Source Material: Ensure all responses are strictly derived from the One Piece universe.
+    No Speculation: Avoid speculation or information that does not pertain to One Piece lore.
 
 Clarity and Detail:
 
-    Concise yet Comprehensive: Be concise but thorough, ensuring each response contains necessary details to maximize loading efficiency and safety.
-    Organized Guidance: Present instructions in a logical sequence, making them clear and actionable for the user.
+    Concise yet Comprehensive: Be concise while providing relevant details as necessary for clarity.
+    Organized Information: Present information logically, ensuring clarity in your explanations.
 
 Handling Uncertainty:
 
-    Ambiguity: If a question lacks specifics or requires clarification, respond with: “Please provide additional details to ensure accurate guidance.”
-    Unanswerable Scenarios: For requests beyond typical logistics parameters, acknowledge limitations, suggesting alternative actions where possible.
+    Ambiguity: If a question is ambiguous or cannot be answered based on the source material, respond with: "I am unable to answer that question accurately."
 
 User Instructions:
 
-    Encouragement to Ask: Encourage users to specify load details like cargo type, weight, dimensions, or vehicle type for optimal advice.
-    Clarification Requests: If the user’s question is vague, ask specific follow-up questions to ensure complete and useful answers.
+    Encouragement to Ask: Encourage users to ask specific questions related to the One Piece universe.
+    Clarification: Be prepared to ask clarifying questions if the user's inquiry lacks detail.
 
 Review and Accuracy:
 
-    Fact-Checking: Verify all advice aligns with logistics standards, load regulations, and relevant safety measures before responding.
+    Fact-Checking: Before finalizing your response, ensure that all information provided is accurate and relevant to the question asked.
 """
 
 # Function to get the answer from OpenAI
-def get_maxload_answer(query):
+def get_one_piece_answer(query):
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": query}
@@ -90,7 +102,7 @@ def get_maxload_answer(query):
         answer = response.choices[0].message.content.strip()
         
         # Validate answer length or content to retry if off-track
-        if "load" not in answer and len(answer.split()) < 10:
+        if "One Piece" not in answer and len(answer.split()) < 10:
             return "I'm unable to answer that question accurately."
         return answer
 
@@ -99,17 +111,19 @@ def get_maxload_answer(query):
 
 # Main content container with styling
 st.markdown('<div class="main-content">', unsafe_allow_html=True)
-st.title("MaxLoad: Load Optimization Assistant")
-st.write("Efficient Loading Solutions for Maximum Capacity and Safety")
+st.title("One Piece Knowledge Tool")
+st.write("Explore and interact with information about the One Piece world!")
 
-# Input for user questions related to load optimization
-load_input = st.text_input("Ask about load optimization or logistics", placeholder="Enter your question here")
-submit_button = st.button("Get Loading Advice")
+# Input for user questions using text_area for a larger input field
+one_piece_input = st.text_area("Ask about the One Piece world", placeholder="Enter your question here", height=150)
 
-if submit_button and load_input:
-    with st.spinner("Calculating optimal load..."):
-        # Get the answer using MaxLoad's API or logic
-        response = get_load_advice(load_input)
-        st.write(response)
+submit_button = st.button("Generate Answer")
+
+if submit_button and one_piece_input:
+    with st.spinner("Retrieving knowledge..."):
+        # Get the answer using OpenAI's API
+        response = get_one_piece_answer(one_piece_input)
+        # Use st.markdown to enhance the output display
+        st.markdown(f"<div style='font-size: 18px; line-height: 1.5;'>{response}</div>", unsafe_allow_html=True)
+
 st.markdown('</div>', unsafe_allow_html=True)
-
