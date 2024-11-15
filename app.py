@@ -24,7 +24,7 @@ warnings.filterwarnings('ignore')
 st.set_page_config(page_title="MaxLoad: Load Optimization Assistant", page_icon="🏴‍☠️", layout="wide")
 
 
-# Load the Jolly Roger image
+# Load the logistics-related image
 try:
     maxload_path = "./MaxLoad_bg.jpg"
     maxload_image = Image.open(maxload_path)
