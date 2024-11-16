@@ -1,4 +1,4 @@
-tem_ID,Item_Name,Quantity,Weight_kg,Dimensions_cm (L x W x H),Fragile,Stackable,Delivery_Location,Vehicle_Type,Vehicle_Capacity_kg,Vehicle_Dimensions_cm (L x W x H)
+Item_ID,Item_Name,Quantity,Weight_kg,Dimensions_cm (L x W x H),Fragile,Stackable,Delivery_Location,Vehicle_Type,Vehicle_Capacity_kg,Vehicle_Dimensions_cm (L x W x H)
 1,Laptops,50,1.5,30 x 20 x 5,Yes,No,Manila,Truck,"5,000",400 x 200 x 200
 2,Office Chairs,20,15,80 x 80 x 100,No,Yes,Cebu,Truck,"5,000",400 x 200 x 200
 3,Desks,15,30,150 x 80 x 75,No,Yes,Davao,Container,"20,000",800 x 240 x 240
